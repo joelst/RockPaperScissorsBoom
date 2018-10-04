@@ -5,7 +5,5 @@ services:
       context: .
       dockerfile: Dockerfile-Server
     container_name: rockpaperscissors-server
-    environment:
-      "ConnectionStrings:DefaultConnection": "Server=rockpaperscissors-sql,1433;Database=RockPaperScissorsBoom;User Id=SA;Password=M1cr0s0ft2018;"
     ports:
         - "80:80"

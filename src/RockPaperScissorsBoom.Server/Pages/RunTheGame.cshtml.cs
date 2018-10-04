@@ -123,15 +123,14 @@ namespace RockPaperScissorsBoom.Server.Pages
                 new Competitor {Name = "Rocky", BotType = typeof(RockOnlyBot).AssemblyQualifiedName},
                 new Competitor {Name = "Treebeard", BotType = typeof(PaperOnlyBot).AssemblyQualifiedName},
                 new Competitor {Name = "Sharpy", BotType = typeof(ScissorsOnlyBot).AssemblyQualifiedName},
-                new Competitor {Name = "All Washed Up", BotType = typeof(WaterOnlyBot).AssemblyQualifiedName},
                 new Competitor {Name = "Clever Bot", BotType = typeof(CleverBot).AssemblyQualifiedName},
                 new Competitor {Name = "Smart Bot", BotType = typeof(SmartBot).AssemblyQualifiedName},
-                //new Competitor
-                //{
-                //    Name = "Signals",
-                //    BotType = typeof(SignalRBot).AssemblyQualifiedName,
-                //    Url = "https://localhost:44347/decision"
-                //},
+                new Competitor
+                {
+                    Name = "Signals",
+                    BotType = typeof(SignalRBot).AssemblyQualifiedName,
+                    Url = "https://localhost:44347/decision"
+                },
                 new Competitor {Name = "Rando Carrisian", BotType = typeof(RandomBot).AssemblyQualifiedName}
             };
             return competitors;

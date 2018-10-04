@@ -17,4 +17,4 @@ RUN dotnet publish RockPaperScissorsBoom.ExampleBot.csproj -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "RockPaperScissorsBoom.Server.dll"]
+ENTRYPOINT ["dotnet", "RockPaperScissorsBoom.ExampleBot.dll"]
